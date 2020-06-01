@@ -277,9 +277,17 @@
           "readOnly": true,
           "description": "Azure resource type"
         },
-        "eTag": {
+        "etag": {
           "type": "string",
           "description": "This will be used to handle Optimistic Concurrency. If not present, it will always overwrite the existing resource without checking conflict."
+        },
+        "subscriptionId": {
+          "type": "string",
+          "description": "The subscription of the saved query."
+        },
+        "resourceGroup": {
+          "type": "string",
+          "description": "The resource group of the saved query."
         },
         "tags": {
           "type": "object",
@@ -367,7 +375,7 @@
           },
           "description": "Resource tags"
         },
-        "eTag": {
+        "etag": {
           "type": "string",
           "description": "This will be used to handle Optimistic Concurrency. If not present, it will always overwrite the existing resource without checking conflict."
         },
