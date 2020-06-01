@@ -281,14 +281,6 @@
           "type": "string",
           "description": "This will be used to handle Optimistic Concurrency. If not present, it will always overwrite the existing resource without checking conflict."
         },
-        "subscriptionId": {
-          "type": "string",
-          "description": "The subscription of the saved query."
-        },
-        "resourceGroup": {
-          "type": "string",
-          "description": "The resource group of the saved query."
-        },
         "tags": {
           "type": "object",
           "additionalProperties": {
@@ -325,6 +317,14 @@
         }
       ],
       "properties": {
+        "subscriptionId": {
+          "type": "string",
+          "description": "The subscription of the saved query."
+        },
+        "resourceGroup": {
+          "type": "string",
+          "description": "The resource group of the saved query."
+        },
         "properties": {
           "x-ms-client-flatten": true,
           "description": "Metadata describing a graph query for an Azure resource.",
